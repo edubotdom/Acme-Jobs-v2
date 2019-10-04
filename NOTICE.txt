@@ -1,3 +1,4 @@
+
 # NOTICE.txt
 #
 # Copyright (c) 2019 Rafael Corchuelo.
@@ -30,3 +31,4 @@ The contributors of this projects are:
 
 - Daniel Arellano Martínez (danaremar@alum.us.es)
 - Eduardo Miguel Botía Domingo(edubotdom@alum.us.es)
+- Juan Noguerol Tirado (juanogtir@alum.us.es)
