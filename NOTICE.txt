@@ -28,4 +28,5 @@ The following tools and components are required:
 
 The contributors of this projects are:
 
--Daniel Arellano Martínez (danaremar@alum.us.es)
+- Daniel Arellano Martínez (danaremar@alum.us.es)
+- Eduardo Miguel Botía Domingo(edubotdom@alum.us.es)
