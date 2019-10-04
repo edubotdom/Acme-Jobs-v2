@@ -29,3 +29,5 @@ The following tools and components are required:
  The contributors of this projects are:
  
  - Eduardo Miguel Botía Domingo(edubotdom@alum.us.es)
+ Juan Noguerol Tirado <juanogtir@alum.us.es>
+
