@@ -1,3 +1,4 @@
+
 # i18n_es.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
@@ -29,9 +30,10 @@ master.menu.sign-out = Salir
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
-master.menu.anonymous.favourite-link = Enlace favorito
-master.menu.anonymous.edmig-favourite-link = EdMig Enlace favorito
-master.menu.anonymous.danaremar-favourite-link = danaremar Enlace favorito
+master.menu.anonymous.edmig-favourite-link = link favorito de EdMig
+master.menu.anonymous.juanogtir-favourite-link = link favorito de Juanogtir
+master.menu.anonymous.javvazzam-favourite-link = link favorito de Javvazzam
+master.menu.anonymous.danaremar-favourite-link = link favorito de Danaremar
 
 # master.menu.administrator ###################################################
 
@@ -93,4 +95,4 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	
+
