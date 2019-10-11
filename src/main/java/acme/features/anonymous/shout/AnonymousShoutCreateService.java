@@ -12,7 +12,7 @@
 
 package acme.features.anonymous.shout;
 
-import java.util.Collection;
+import java.sql.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,7 +25,7 @@ import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractCreateService;
 
 @Service
-public class AnonymousShoutListService implements AbstractCreateService<Anonymous, Shout> {
+public class AnonymousShoutCreateService implements AbstractCreateService<Anonymous, Shout> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -40,13 +40,10 @@ public class AnonymousShoutListService implements AbstractCreateService<Anonymou
 		return true;
 	}
 
-	public Collection<Shout> findMany(final Request<Shout> request) {
-		assert request != null;
+	@Override
+	public void bind(final Request<Shout> request, final Shout entity, final Errors errors) {
+		// TODO Auto-generated method stub
 
-		Collection<Shout> result;
-
-		result = this.repository.findMany();
-		return result;
 	}
 
 	@Override
@@ -55,30 +52,44 @@ public class AnonymousShoutListService implements AbstractCreateService<Anonymou
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "author", "text", "moment");
-	}
-
-	@Override
-	public void bind(final Request<Shout> request, final Shout entity, final Errors errors) {
-		// TODO Auto-generated method stub
-
+		request.unbind(entity, model, "author", "text");
 	}
 
 	@Override
 	public Shout instantiate(final Request<Shout> request) {
-		// TODO Auto-generated method stub
-		return null;
+		assert request != null;
+
+		Shout result;
+		Date moment;
+
+		moment = new Date(System.currentTimeMillis() - 1);
+
+		result = new Shout();
+		result.setAuthor("Rafa Nadal");
+		result.setText("verme jugar chicos");
+		result.setMoment(moment);
+
+		return result;
 	}
 
 	@Override
 	public void validate(final Request<Shout> request, final Shout entity, final Errors errors) {
-		// TODO Auto-generated method stub
-
+		assert request != null;
+		assert entity != null;
+		assert errors != null;
 	}
 
 	@Override
 	public void create(final Request<Shout> request, final Shout entity) {
-		// TODO Auto-generated method stub
+		assert request != null;
+		assert entity != null;
+
+		Date moment;
+
+		moment = new Date(System.currentTimeMillis() - 1);
+		entity.setMoment(moment);
+		this.repository.save(entity);
 
 	}
+
 }
