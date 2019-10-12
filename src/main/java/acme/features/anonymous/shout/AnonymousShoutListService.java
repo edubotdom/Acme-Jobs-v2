@@ -17,8 +17,6 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.shouts.Shout;
-import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Anonymous;
@@ -40,6 +38,7 @@ public class AnonymousShoutListService implements AbstractCreateService<Anonymou
 		return true;
 	}
 
+	@Override
 	public Collection<Shout> findMany(final Request<Shout> request) {
 		assert request != null;
 
@@ -56,29 +55,5 @@ public class AnonymousShoutListService implements AbstractCreateService<Anonymou
 		assert model != null;
 
 		request.unbind(entity, model, "author", "text", "moment");
-	}
-
-	@Override
-	public void bind(final Request<Shout> request, final Shout entity, final Errors errors) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public Shout instantiate(final Request<Shout> request) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void validate(final Request<Shout> request, final Shout entity, final Errors errors) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void create(final Request<Shout> request, final Shout entity) {
-		// TODO Auto-generated method stub
-
 	}
 }
