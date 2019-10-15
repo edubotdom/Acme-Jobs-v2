@@ -33,3 +33,4 @@ The contributors of this projects are:
 - Eduardo Miguel Botía Domingo(edubotdom@alum.us.es)
 - Juan Noguerol Tirado (juanogtir@alum.us.es)
 - Javier Vázquez Zambrano (javvazzam@alum.us.es)
+- Sergio Aguayo Orozco (seraguoro@alum.us.es)
